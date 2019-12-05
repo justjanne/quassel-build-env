@@ -1,7 +1,7 @@
-FROM ubuntu:cosmic
+FROM ubuntu:eoan
 
 # Install dependencies
-RUN apt-get update && apt-get -qy install \
+RUN apt-get update && apt-get -qy --no-install-recommends install \
     build-essential \
     ccache \
     clang \
